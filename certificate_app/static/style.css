@@ -1,0 +1,266 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(233, 229, 229) !important; /* Light gray background */
+}
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #2a77b8;
+    color: white;
+    text-decoration: none;
+    margin: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #1d5e8b;
+    text-decoration: none;
+    color: white;
+}
+.navbar {
+    background-color: #2a77b8;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    margin-right: 2rem;
+}
+
+.nav-item {
+    margin-right: 1.5rem;
+}
+
+.nav-link {
+    /* color: white !important; */
+    font-size: 0.8rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #1d5e8b !important;
+}
+
+.hero {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/static/memorial_2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 10rem 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem ;
+    /* padding: 0 4em; */
+    background-color: white;
+}
+
+.feature {
+    flex: 0 0 calc(33.33% - 2rem);
+    text-align: center;
+}
+
+.feature img {
+    max-width: 100%;
+    margin: 0 auto 1.5rem;
+}
+
+.feature h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature p {
+    font-size: 1.1rem;
+    color: #666;
+}
+.testimonials{
+    /* display: flex; */
+    align-items: center;
+    background-color: white;
+}
+.sub-testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 2rem ;
+}
+
+.testimonial-heading {
+    font-size: 1.5rem;
+    margin:4rem 0 1rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    /* align-items: center; */
+}
+
+.testimonial {
+    flex: 0 0 calc(50% - 2rem);
+    padding: 1.5rem;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial span {
+    display: block;
+    color: #888;
+}
+
+.contact {
+    text-align: center;
+    margin-bottom: 5rem;
+    /* background-color: white; */
+    padding-top: 4rem;
+}
+
+.contact h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.contact a {
+    font-size: 1.2rem;
+    color: #2a77b8;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact a:hover {
+    color: #1d5e8b;
+}
+
+.about {
+    /* background-color: #f5f5f5; */
+    padding: 4rem 0 1rem;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* styles.css */
+.form-div {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.form-div form {
+    display: grid;
+    gap: 20px;
+}
+
+.form-div label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-div input[type="text"],
+.form-div select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+.form-div input[type="text"]:focus,
+.form-div select:focus {
+    border-color: #ffc107;
+}
+
+.form-div button[type="submit"] {
+    background-color: #ffc107;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-div button[type="submit"]:hover {
+    background-color: #ffab00;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        flex: 0 0 calc(100% - 2rem);
+        margin-bottom: 2rem;
+    }
+
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        flex: 0 0 calc(100% - 2rem);
+    }
+}

@@ -9,3 +9,4 @@ class CertificateForm(forms.Form):
     death_date = forms.DateField(widget=DateInput())
     death_location = forms.CharField(max_length=1000)
     date_of_birth = forms.DateField(widget=DateInput())
+    evidence_of_death = forms.FileField(help_text="E.g. Doctor's Clearance")

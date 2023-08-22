@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Death Certificate Services</h1>
+            <p>We are here to assist you with applying for death certificates and searching existing records.</p>
+            <a href="" class="cta-button">Apply Now</a>
+            <a href="" class="cta-button">Search Records</a>
+        </div>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <img src="{% static 'person_filling_form.jpg' %}"
+                 alt="Feature 1"
+                 height=""
+                 width="">
+            <h2>Apply for Death Certificate</h2>
+            <p>Efficiently fill out the application form and get your death certificate online.</p>
+        </div>
+        <div class="feature">
+            <img src="{% static 'person_with_computer.jpg' %}"
+                 alt="Feature 2"
+                 height=""
+                 width="">
+            <h2>Search Death Records</h2>
+            <p>Find existing death records using various criteria such as name, date, and location.</p>
+        </div>
+        <div class="feature">
+            <img src="{% static 'user_support.jpg' %}"
+                 alt="User Support"
+                 height=""
+                 width="">
+            <h2>User Support</h2>
+            <p>
+                Our dedicated support team is here to assist you at every step of the way. Whether you have questions about the application process or need help with record searches, we're here to provide prompt and friendly assistance.
+            </p>
+        </div>
+        <!-- Add more feature sections here -->
+    </section>
+    <section class="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>
+                We are dedicated to providing a seamless and efficient experience for obtaining death certificates. Our platform aims to simplify the application process and make it easy for you to access essential records.
+            </p>
+        </div>
+    </section>
+    <section class="testimonials">
+        <div class="testimonial-heading">
+            <h3>What Our Customers Say</h3>
+        </div>
+        <div class="sub-testimonials">
+            <div class="testimonial">
+                <p>
+                    "The service provided by Death Certificate Services was incredibly fast and convenient. I received my certificate without any hassle."
+                </p>
+                <span>- John Doe</span>
+            </div>
+            <div class="testimonial">
+                <p>"I was able to search for my grandfather's death record easily. The website is user-friendly and reliable."</p>
+                <span>- Jane Smith</span>
+            </div>
+            <div class="testimonial">
+                <p>"I was able to search for my father's granddeath record easily. The website is user-friendly and reliable."</p>
+                <span>- Smart Smith</span>
+            </div>
+        </div>
+        <!-- Add more testimonials here -->
+    </section>
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to reach out to us.</p>
+        <a href="mailto:contact@deathcertificates.com">contact@deathcertificates.com</a>
+    </section>
+{% endblock body %}
