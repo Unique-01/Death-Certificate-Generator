@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+    .custom-container {
+        max-width: 600px; /* Adjust the maximum width of the container */
+        margin: 0 auto;
+    }
+
+    {% comment %} .card {
+        border: none; /* Remove card border */
+    } {% endcomment %}
+</style>
+    <div class="container-fluid bg-light py-5">
+        <div class="custom-container mt-5">
+            <h1 class="mb-4">Certificate Application Detail</h1>
+            <div class="card">
+                <div class="card-body">
+                    <img src="{{ certificate.image.url }}" alt="Certificate Image" class="img-fluid mb-3">
+                    <p class="mb-2"><strong>Deceased Name:</strong> {{ certificate.deceased_name }}</p>
+                    <p class="mb-0"><strong>Timestamp:</strong> {{ certificate.timestamp }}</p>
+                </div>
+            </div>
+            <a href="{{ certificate.image.url }}" class="btn btn-primary mt-3" download>Download Certificate</a>
+        </div>
+    </div>
+{% endblock content %}
+    

@@ -9,6 +9,7 @@ import cv2
 import os
 from django.conf import settings
 from django.db.models import Q
+from django.contrib import messages
 
 
 # Create your views here.
@@ -37,7 +38,10 @@ def generate_certificate(request):
             certificate.image.save(
                 f"{user_data['full_name']}-{user_data['death_date']}.png", image)
             certificate.save()
-            return redirect('certificate_form')
+            messages.success(request,"You have successfully applied for Death Certificate")
+            # return redirect('certificate_form')
+            return redirect('certificate_detail', id=certificate.id)
+        
 
     return render(request, 'certificate_form.html', {'form': form, 'updated_template': updated_template})
 
@@ -49,3 +53,7 @@ def search_records(request):
         search_query = DeathRecord.objects.filter(deceased_name__iexact=query)
 
     return render(request,'search.html',{'search_query':search_query})
+
+def certificate_detail(request, id):
+    certificate = DeathRecord.objects.get(id=id)
+    return render(request, 'certificate_detail.html', {'certificate':certificate})
