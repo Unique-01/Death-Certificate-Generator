@@ -14,7 +14,7 @@ html-tag-names==0.1.2
 html-void-elements==0.1.0
 jsbeautifier==1.14.9
 json5==0.9.14
-numpy==1.25.2
+numpy==1.26.4
 opencv-python==4.8.0.74
 pathspec==0.11.2
 pycodestyle==2.11.0
